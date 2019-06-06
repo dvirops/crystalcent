@@ -2,7 +2,7 @@ version: 1.0
 shards:
   halite:
     github: icyleaf/halite
-    version: 0.10.1
+    version: 0.10.0
 
   webmock:
     github: manastech/webmock.cr
