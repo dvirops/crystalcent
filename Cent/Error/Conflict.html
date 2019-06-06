@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.29.0">
+
+
+<link href="../../css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../../js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "../../";
+</script>
+
+  <meta id="repository-name" content="github.com/devops-israel/crystalcent">
+  <title>Cent::Error::Conflict - github.com/devops-israel/crystalcent</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="repository-links">
+      <a href="../../index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="github.com/devops-israel/crystalcent/Cent" data-name="cent">
+      <a href="../../Cent.html">Cent</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="github.com/devops-israel/crystalcent/Cent/Client" data-name="cent::client">
+      <a href="../../Cent/Client.html">Client</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/devops-israel/crystalcent/Cent/Client/Api" data-name="cent::client::api">
+      <a href="../../Cent/Client/Api.html">Api</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/devops-israel/crystalcent/Cent/Error" data-name="cent::error">
+      <a href="../../Cent/Error.html">Error</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/devops-israel/crystalcent/Cent/Error/APIError" data-name="cent::error::apierror">
+      <a href="../../Cent/Error/APIError.html">APIError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/crystalcent/Cent/Error/BadGateway" data-name="cent::error::badgateway">
+      <a href="../../Cent/Error/BadGateway.html">BadGateway</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/crystalcent/Cent/Error/BadRequest" data-name="cent::error::badrequest">
+      <a href="../../Cent/Error/BadRequest.html">BadRequest</a>
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/devops-israel/crystalcent/Cent/Error/Conflict" data-name="cent::error::conflict">
+      <a href="../../Cent/Error/Conflict.html">Conflict</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/crystalcent/Cent/Error/Error" data-name="cent::error::error">
+      <a href="../../Cent/Error/Error.html">Error</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/crystalcent/Cent/Error/Forbidden" data-name="cent::error::forbidden">
+      <a href="../../Cent/Error/Forbidden.html">Forbidden</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/crystalcent/Cent/Error/InsufficientStorage" data-name="cent::error::insufficientstorage">
+      <a href="../../Cent/Error/InsufficientStorage.html">InsufficientStorage</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/crystalcent/Cent/Error/InternalServerError" data-name="cent::error::internalservererror">
+      <a href="../../Cent/Error/InternalServerError.html">InternalServerError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/crystalcent/Cent/Error/MethodNotAllowed" data-name="cent::error::methodnotallowed">
+      <a href="../../Cent/Error/MethodNotAllowed.html">MethodNotAllowed</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/crystalcent/Cent/Error/NotFound" data-name="cent::error::notfound">
+      <a href="../../Cent/Error/NotFound.html">NotFound</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/crystalcent/Cent/Error/ServiceUnavailable" data-name="cent::error::serviceunavailable">
+      <a href="../../Cent/Error/ServiceUnavailable.html">ServiceUnavailable</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/crystalcent/Cent/Error/Unauthorized" data-name="cent::error::unauthorized">
+      <a href="../../Cent/Error/Unauthorized.html">Unauthorized</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/crystalcent/Cent/Error/Unprocessable" data-name="cent::error::unprocessable">
+      <a href="../../Cent/Error/Unprocessable.html">Unprocessable</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Cent::Error::Conflict
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../../Cent/Error/Conflict.html">Cent::Error::Conflict</a></li><li class="superclass"><a href="../../Cent/Error/APIError.html">Cent::Error::APIError</a></li><li class="superclass"><a href="../../Cent/Error/Error.html">Cent::Error::Error</a></li><li class="superclass">Exception</li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/devops-israel/crystalcent/blob/0140c0964930da1e3f1bf753a8e6e224f17b4a8c/src/cent/error.cr#L56" target="_blank">
+        cent/error.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+  <h3>Instance methods inherited from class <code><a href="../../Cent/Error/APIError.html">Cent::Error::APIError</a></code></h3>
+  
+  
+    <a href="../../Cent/Error/APIError.html#response%3AHalite%3A%3AResponse-instance-method" class="tooltip">
+      <span>response : Halite::Response</span>
+    response</a>
+    
+  
+
+
+    
+
+  <h3>Constructor methods inherited from class <code><a href="../../Cent/Error/APIError.html">Cent::Error::APIError</a></code></h3>
+  
+  
+    <a href="../../Cent/Error/APIError.html#new%28response%3AHalite%3A%3AResponse%29-class-method" class="tooltip">
+      <span>new(response : Halite::Response)</span>
+    new</a>
+    
+  
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

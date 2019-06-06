@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.29.0">
+
+
+<link href="../../css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../../js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "../../";
+</script>
+
+  <meta id="repository-name" content="github.com/devops-israel/crystalcent">
+  <title>Cent::Client::Api - github.com/devops-israel/crystalcent</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="repository-links">
+      <a href="../../index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="github.com/devops-israel/crystalcent/Cent" data-name="cent">
+      <a href="../../Cent.html">Cent</a>
+      
+        <ul>
+  
+  <li class="parent open current" data-id="github.com/devops-israel/crystalcent/Cent/Client" data-name="cent::client">
+      <a href="../../Cent/Client.html">Client</a>
+      
+        <ul>
+  
+  <li class=" current" data-id="github.com/devops-israel/crystalcent/Cent/Client/Api" data-name="cent::client::api">
+      <a href="../../Cent/Client/Api.html">Api</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/devops-israel/crystalcent/Cent/Error" data-name="cent::error">
+      <a href="../../Cent/Error.html">Error</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/devops-israel/crystalcent/Cent/Error/APIError" data-name="cent::error::apierror">
+      <a href="../../Cent/Error/APIError.html">APIError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/crystalcent/Cent/Error/BadGateway" data-name="cent::error::badgateway">
+      <a href="../../Cent/Error/BadGateway.html">BadGateway</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/crystalcent/Cent/Error/BadRequest" data-name="cent::error::badrequest">
+      <a href="../../Cent/Error/BadRequest.html">BadRequest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/crystalcent/Cent/Error/Conflict" data-name="cent::error::conflict">
+      <a href="../../Cent/Error/Conflict.html">Conflict</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/crystalcent/Cent/Error/Error" data-name="cent::error::error">
+      <a href="../../Cent/Error/Error.html">Error</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/crystalcent/Cent/Error/Forbidden" data-name="cent::error::forbidden">
+      <a href="../../Cent/Error/Forbidden.html">Forbidden</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/crystalcent/Cent/Error/InsufficientStorage" data-name="cent::error::insufficientstorage">
+      <a href="../../Cent/Error/InsufficientStorage.html">InsufficientStorage</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/crystalcent/Cent/Error/InternalServerError" data-name="cent::error::internalservererror">
+      <a href="../../Cent/Error/InternalServerError.html">InternalServerError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/crystalcent/Cent/Error/MethodNotAllowed" data-name="cent::error::methodnotallowed">
+      <a href="../../Cent/Error/MethodNotAllowed.html">MethodNotAllowed</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/crystalcent/Cent/Error/NotFound" data-name="cent::error::notfound">
+      <a href="../../Cent/Error/NotFound.html">NotFound</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/crystalcent/Cent/Error/ServiceUnavailable" data-name="cent::error::serviceunavailable">
+      <a href="../../Cent/Error/ServiceUnavailable.html">ServiceUnavailable</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/crystalcent/Cent/Error/Unauthorized" data-name="cent::error::unauthorized">
+      <a href="../../Cent/Error/Unauthorized.html">Unauthorized</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/devops-israel/crystalcent/Cent/Error/Unprocessable" data-name="cent::error::unprocessable">
+      <a href="../../Cent/Error/Unprocessable.html">Unprocessable</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">module</span> Cent::Client::Api
+
+</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Direct including types</h2>
+  <ul class="other-types-list">
+  
+    <li class="other-type"><a href="../../Cent/Client.html">Cent::Client</a></li>
+  
+  </ul>
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/devops-israel/crystalcent/blob/0140c0964930da1e3f1bf753a8e6e224f17b4a8c/src/cent/client/api.cr#L3" target="_blank">
+        cent/client/api.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#broadcast%28channels%3AArray%28String%29%2Cdata%3AHash%28String%2CUNDERSCORE%29%7CNamedTuple%29%3AJSON%3A%3AAny-instance-method" class="signature"><strong>#broadcast</strong>(channels : Array(String), data : Hash(String, UNDERSCORE) | NamedTuple) : JSON::Any</a>
+        
+          <div class="summary"><p><code><a href="../../Cent/Client/Api.html#broadcast%28channels%3AArray%28String%29%2Cdata%3AHash%28String%2CUNDERSCORE%29%7CNamedTuple%29%3AJSON%3A%3AAny-instance-method">#broadcast</a></code> allows to send the same data into many channels.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#channels%3AJSON%3A%3AAny-instance-method" class="signature"><strong>#channels</strong> : JSON::Any</a>
+        
+          <div class="summary"><p><code><a href="../../Cent/Client/Api.html#channels%3AJSON%3A%3AAny-instance-method">#channels</a></code> allows to get list of active (with one or more subscribers) channels.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#disconnect%28user%3AString%29%3AJSON%3A%3AAny-instance-method" class="signature"><strong>#disconnect</strong>(user : String) : JSON::Any</a>
+        
+          <div class="summary"><p><code><a href="../../Cent/Client/Api.html#disconnect%28user%3AString%29%3AJSON%3A%3AAny-instance-method">#disconnect</a></code> allows to disconnect user by ID</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#history%28channel%3AString%29%3AJSON%3A%3AAny-instance-method" class="signature"><strong>#history</strong>(channel : String) : JSON::Any</a>
+        
+          <div class="summary"><p><code><a href="../../Cent/Client/Api.html#history%28channel%3AString%29%3AJSON%3A%3AAny-instance-method">#history</a></code> allows to get channel history information (list of last messages published into channel).</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#info%3AJSON%3A%3AAny-instance-method" class="signature"><strong>#info</strong> : JSON::Any</a>
+        
+          <div class="summary"><p><code><a href="../../Cent/Client/Api.html#info%3AJSON%3A%3AAny-instance-method">#info</a></code> method allows to get information about running Centrifugo nodes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#presence%28channel%3AString%29%3AJSON%3A%3AAny-instance-method" class="signature"><strong>#presence</strong>(channel : String) : JSON::Any</a>
+        
+          <div class="summary"><p><code><a href="../../Cent/Client/Api.html#presence%28channel%3AString%29%3AJSON%3A%3AAny-instance-method">#presence</a></code> allows to get channel presence information (all clients currently subscribed on this channel).</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#presence_stats%28channel%3AString%29%3AJSON%3A%3AAny-instance-method" class="signature"><strong>#presence_stats</strong>(channel : String) : JSON::Any</a>
+        
+          <div class="summary"><p><code><a href="../../Cent/Client/Api.html#presence_stats%28channel%3AString%29%3AJSON%3A%3AAny-instance-method">#presence_stats</a></code> allows to get short channel presence information.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#publish%28channel%3AString%2Cdata%3AHash%28String%2CUNDERSCORE%29%7CNamedTuple%29%3AJSON%3A%3AAny-instance-method" class="signature"><strong>#publish</strong>(channel : String, data : Hash(String, UNDERSCORE) | NamedTuple) : JSON::Any</a>
+        
+          <div class="summary"><p><code><a href="../../Cent/Client/Api.html#publish%28channel%3AString%2Cdata%3AHash%28String%2CUNDERSCORE%29%7CNamedTuple%29%3AJSON%3A%3AAny-instance-method">#publish</a></code> command allows to publish data into channel.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#send%28json%3AHash%28String%2CUNDERSCORE%29%7CNamedTuple%29-instance-method" class="signature"><strong>#send</strong>(json : Hash(String, UNDERSCORE) | NamedTuple)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#unsubscribe%28channel%3AString%2Cuser%3AString%29%3AJSON%3A%3AAny-instance-method" class="signature"><strong>#unsubscribe</strong>(channel : String, user : String) : JSON::Any</a>
+        
+          <div class="summary"><p><code><a href="../../Cent/Client/Api.html#unsubscribe%28channel%3AString%2Cuser%3AString%29%3AJSON%3A%3AAny-instance-method">#unsubscribe</a></code> allows to unsubscribe user from channel</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+</div>
+
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="broadcast(channels:Array(String),data:Hash(String,UNDERSCORE)|NamedTuple):JSON::Any-instance-method">
+      <div class="signature">
+        
+        def <strong>broadcast</strong>(channels : Array(String), data : Hash(String, UNDERSCORE) | NamedTuple) : JSON::Any
+
+        <a class="method-permalink" href="#broadcast%28channels%3AArray%28String%29%2Cdata%3AHash%28String%2CUNDERSCORE%29%7CNamedTuple%29%3AJSON%3A%3AAny-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p><code><a href="../../Cent/Client/Api.html#broadcast%28channels%3AArray%28String%29%2Cdata%3AHash%28String%2CUNDERSCORE%29%7CNamedTuple%29%3AJSON%3A%3AAny-instance-method">#broadcast</a></code> allows to send the same data into many channels.</p>
+
+<ul><li>channels [Array(String)] Channels.</li><li>data [(Hash(String, _) | NamedTuple)] data to send in the channel.</li></ul>
+
+<pre><code>client.broadcast([<span class="s">&quot;channel_x&quot;</span>, <span class="s">&quot;channel_y&quot;</span>], {<span class="s">&quot;stam&quot;</span> => <span class="s">&quot;data&quot;</span>})</code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/devops-israel/crystalcent/blob/0140c0964930da1e3f1bf753a8e6e224f17b4a8c/src/cent/client/api.cr#L24" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="channels:JSON::Any-instance-method">
+      <div class="signature">
+        
+        def <strong>channels</strong> : JSON::Any
+
+        <a class="method-permalink" href="#channels%3AJSON%3A%3AAny-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p><code><a href="../../Cent/Client/Api.html#channels%3AJSON%3A%3AAny-instance-method">#channels</a></code> allows to get list of active (with one or more subscribers) channels.</p>
+
+<pre><code>client.channels</code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/devops-israel/crystalcent/blob/0140c0964930da1e3f1bf753a8e6e224f17b4a8c/src/cent/client/api.cr#L89" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="disconnect(user:String):JSON::Any-instance-method">
+      <div class="signature">
+        
+        def <strong>disconnect</strong>(user : String) : JSON::Any
+
+        <a class="method-permalink" href="#disconnect%28user%3AString%29%3AJSON%3A%3AAny-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p><code><a href="../../Cent/Client/Api.html#disconnect%28user%3AString%29%3AJSON%3A%3AAny-instance-method">#disconnect</a></code> allows to disconnect user by ID</p>
+
+<ul><li>user [String] User key.</li></ul>
+
+<pre><code>client.disconnect(<span class="s">&quot;user_x&quot;</span>)</code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/devops-israel/crystalcent/blob/0140c0964930da1e3f1bf753a8e6e224f17b4a8c/src/cent/client/api.cr#L47" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="history(channel:String):JSON::Any-instance-method">
+      <div class="signature">
+        
+        def <strong>history</strong>(channel : String) : JSON::Any
+
+        <a class="method-permalink" href="#history%28channel%3AString%29%3AJSON%3A%3AAny-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p><code><a href="../../Cent/Client/Api.html#history%28channel%3AString%29%3AJSON%3A%3AAny-instance-method">#history</a></code> allows to get channel history information (list of last messages published into channel).</p>
+
+<ul><li>channel [String] Channel name.</li></ul>
+
+<pre><code>client.history(<span class="s">&quot;channel_x&quot;</span>)</code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/devops-israel/crystalcent/blob/0140c0964930da1e3f1bf753a8e6e224f17b4a8c/src/cent/client/api.cr#L80" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="info:JSON::Any-instance-method">
+      <div class="signature">
+        
+        def <strong>info</strong> : JSON::Any
+
+        <a class="method-permalink" href="#info%3AJSON%3A%3AAny-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p><code><a href="../../Cent/Client/Api.html#info%3AJSON%3A%3AAny-instance-method">#info</a></code> method allows to get information about running Centrifugo nodes.</p>
+
+<pre><code>client.info</code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/devops-israel/crystalcent/blob/0140c0964930da1e3f1bf753a8e6e224f17b4a8c/src/cent/client/api.cr#L98" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="presence(channel:String):JSON::Any-instance-method">
+      <div class="signature">
+        
+        def <strong>presence</strong>(channel : String) : JSON::Any
+
+        <a class="method-permalink" href="#presence%28channel%3AString%29%3AJSON%3A%3AAny-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p><code><a href="../../Cent/Client/Api.html#presence%28channel%3AString%29%3AJSON%3A%3AAny-instance-method">#presence</a></code> allows to get channel presence information (all clients currently subscribed on this channel).</p>
+
+<ul><li>channel [String] Channel name.</li></ul>
+
+<pre><code>client.presence(<span class="s">&quot;channel_x&quot;</span>)</code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/devops-israel/crystalcent/blob/0140c0964930da1e3f1bf753a8e6e224f17b4a8c/src/cent/client/api.cr#L58" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="presence_stats(channel:String):JSON::Any-instance-method">
+      <div class="signature">
+        
+        def <strong>presence_stats</strong>(channel : String) : JSON::Any
+
+        <a class="method-permalink" href="#presence_stats%28channel%3AString%29%3AJSON%3A%3AAny-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p><code><a href="../../Cent/Client/Api.html#presence_stats%28channel%3AString%29%3AJSON%3A%3AAny-instance-method">#presence_stats</a></code> allows to get short channel presence information.</p>
+
+<ul><li>channel [String] Channel name.</li></ul>
+
+<pre><code>client.presence_stats(<span class="s">&quot;channel_x&quot;</span>)</code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/devops-israel/crystalcent/blob/0140c0964930da1e3f1bf753a8e6e224f17b4a8c/src/cent/client/api.cr#L69" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="publish(channel:String,data:Hash(String,UNDERSCORE)|NamedTuple):JSON::Any-instance-method">
+      <div class="signature">
+        
+        def <strong>publish</strong>(channel : String, data : Hash(String, UNDERSCORE) | NamedTuple) : JSON::Any
+
+        <a class="method-permalink" href="#publish%28channel%3AString%2Cdata%3AHash%28String%2CUNDERSCORE%29%7CNamedTuple%29%3AJSON%3A%3AAny-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p><code><a href="../../Cent/Client/Api.html#publish%28channel%3AString%2Cdata%3AHash%28String%2CUNDERSCORE%29%7CNamedTuple%29%3AJSON%3A%3AAny-instance-method">#publish</a></code> command allows to publish data into channel. It looks like this:</p>
+
+<ul><li>channel [String] Channel name.</li><li>data [(Hash(String, _) | NamedTuple)] data to send in the channel.</li></ul>
+
+<pre><code>client.publish(<span class="s">&quot;channel_x&quot;</span>, {text: <span class="s">&quot;value1&quot;</span>})</code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/devops-israel/crystalcent/blob/0140c0964930da1e3f1bf753a8e6e224f17b4a8c/src/cent/client/api.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="send(json:Hash(String,UNDERSCORE)|NamedTuple)-instance-method">
+      <div class="signature">
+        
+        def <strong>send</strong>(json : Hash(String, UNDERSCORE) | NamedTuple)
+
+        <a class="method-permalink" href="#send%28json%3AHash%28String%2CUNDERSCORE%29%7CNamedTuple%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/devops-israel/crystalcent/blob/0140c0964930da1e3f1bf753a8e6e224f17b4a8c/src/cent/client/api.cr#L102" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="unsubscribe(channel:String,user:String):JSON::Any-instance-method">
+      <div class="signature">
+        
+        def <strong>unsubscribe</strong>(channel : String, user : String) : JSON::Any
+
+        <a class="method-permalink" href="#unsubscribe%28channel%3AString%2Cuser%3AString%29%3AJSON%3A%3AAny-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p><code><a href="../../Cent/Client/Api.html#unsubscribe%28channel%3AString%2Cuser%3AString%29%3AJSON%3A%3AAny-instance-method">#unsubscribe</a></code> allows to unsubscribe user from channel</p>
+
+<ul><li>channel [String] Channel name.</li><li>user [String] User key.</li></ul>
+
+<pre><code>client.unsubscribe(<span class="s">&quot;channel_x&quot;</span>, <span class="s">&quot;user_x&quot;</span>)</code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/devops-israel/crystalcent/blob/0140c0964930da1e3f1bf753a8e6e224f17b4a8c/src/cent/client/api.cr#L36" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
