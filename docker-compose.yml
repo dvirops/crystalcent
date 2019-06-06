@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  app:
+    build: .
+    command: reflex -d fancy -s -g reflex.conf -- reflex -c reflex.conf
+    volumes:
+    - .:/app

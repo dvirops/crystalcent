@@ -1,0 +1,18 @@
+name: cent
+version: 0.1.0
+
+dependencies:
+  halite:
+    github: icyleaf/halite
+    version: 0.10.1
+
+development_dependencies:
+  webmock:
+    github: manastech/webmock.cr
+
+authors:
+  - Josh Dvir <josh@dvir.us>
+
+crystal: 0.29.0
+
+license: MIT

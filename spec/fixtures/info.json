@@ -1,0 +1,15 @@
+{
+  "result": {
+    "nodes": [
+      {
+        "name": "Alexanders-MacBook-Pro.local_8000",
+        "num_channels": 0,
+        "num_clients": 0,
+        "num_users": 0,
+        "uid": "f844a2ed-5edf-4815-b83c-271974003db9",
+        "uptime": 0,
+        "version": ""
+      }
+    ]
+  }
+}

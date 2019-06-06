@@ -1,0 +1,46 @@
+version: 2
+jobs:
+  test_crystal_0_28:
+    docker:
+      - image: "crystallang/crystal:0.28.0"
+    environment:
+      DOCS_PATH: "docs"
+      GIT_USER: "icyleaf"
+      GIT_EMAIL: "icyleaf.cn@gmail.com"
+      GIT_REPO: "git@github.com:icyleaf/halite.git"
+      GH_REF: "https://github.com/icyleaf/halite"
+      GH_URL: "https://icyleaf.github.io/halite"
+    working_directory: ~/halite
+    steps:
+      - checkout
+      - run:
+          name: "Crystal Version"
+          command: crystal version
+      - run:
+          name: "Specs"
+          command: crystal spec
+      - run:
+          name: "Generate API documents"
+          command: ./.circleci/generate_docs.sh
+      - deploy:
+          name: "Upload to gh-page"
+          command: |
+            git config --global user.name "$GIT_USER"
+            git config --global user.email "$GIT_EMAIL"
+            cd "${DOCS_PATH}"
+            git init
+            git remote add origin $GIT_REPO
+            git fetch origin
+            git reset origin/gh-pages
+            git add -A .
+            git commit --allow-empty -m "Updating documents"
+            git push origin HEAD:gh-pages
+workflows:
+  version: 2
+  build_test_deploy:
+    jobs:
+      - test_crystal_0_28:
+          filters:
+            branches:
+              ignore:
+                - gh-pages
