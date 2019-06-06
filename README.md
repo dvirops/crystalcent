@@ -15,7 +15,7 @@ Inspired from [gitlab](https://github.com/icyleaf/gitlab.cr).
 
 ```yaml
 dependencies:
-  crystalcent:
+  cent:
     github: devops-israel/crystalcent
 ```
 
